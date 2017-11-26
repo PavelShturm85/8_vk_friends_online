@@ -29,12 +29,9 @@ def get_online_friends(login, password):
 
 def output_friends_to_console(list_friends_online):
     for number, online_friend in enumerate(list_friends_online, 1):
-        if online_friend:
-            print("{}) {f[first_name]} {f[last_name]}".format(
-                number, f=online_friend))
-        else:
-            print("You have not friends online.")
-
+        print("{}) {f[first_name]} {f[last_name]}".format(
+            number, f=online_friend))
+        
 
 if __name__ == '__main__':
     login = get_user_login()
